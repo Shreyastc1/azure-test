@@ -19,3 +19,8 @@ resource "azurerm_storage_container" "example" {
   storage_account_name  = azurerm_storage_account.example.name
   container_access_type = "private"
 }
+resource "azurerm_storage_share" "example-1" {
+  name                 = "myshare"
+  storage_account_name = azurerm_storage_account.example.name
+  quota                = 50
+}
