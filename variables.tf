@@ -33,3 +33,14 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+variable "share_name" {
+  description = "The name of the file share."
+  type        = string
+  default  =  "testfileshare"
+}
+
+variable "quota" {
+  description = "The maximum size of the file share in gigabytes."
+  type        = number
+  default  =  "50"
+}
