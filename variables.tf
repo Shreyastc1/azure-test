@@ -10,7 +10,7 @@ variable "location" {
 
 variable "storage_account_name" {
   description = "The name of the storage account."
-  default     = "testsa"
+  default     = "testsa12095673"
 }
 
 variable "account_tier" {
