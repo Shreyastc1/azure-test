@@ -11,14 +11,10 @@ provider "azurerm" {
   features {}  # No special features enabled for the Azure provider
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = var.resource_group_name
-  location = var.location
-}
 
 resource "azurerm_storage_account" "example" {
   name                         = var.storage_account_name
-  resource_group_name          = azurerm_resource_group.example.name
+  resource_group_name          = var.resource_group_name
   location                     = var.location
   account_kind                 = var.account_kind
   account_tier                 = var.account_tier
