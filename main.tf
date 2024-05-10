@@ -15,6 +15,7 @@ resource "azurerm_storage_account" "example" {
   account_tier                 = var.account_tier
   access_tier                  = var.access_tier
   enable_https_traffic_only    = var.enable_https_traffic_only
+  replication_type             = var.replication_type
   allow_blob_public_access     = var.allow_blob_public_access
   allow_nested_items_to_be_public = var.allow_nested_items_to_be_public
 
