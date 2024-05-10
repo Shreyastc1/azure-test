@@ -1,13 +1,16 @@
 variable "resource_group_name" {
   description = "The name of the resource group in which to create the storage account."
+  default  =  "Terraform-rg"
 }
 
 variable "location" {
   description = "The location/region where the storage account will be created."
+  default  =  "Central India"
 }
 
 variable "storage_account_name" {
   description = "The name of the storage account to be created."
+  default  =  "test12653shre9876"
 }
 
 variable "account_kind" {
@@ -39,7 +42,7 @@ variable "allow_blob_public_access" {
 variable "allow_nested_items_to_be_public" {
   description = "Allow or disallow nested items within this account to opt into being public."
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "enable_https_traffic_only" {
@@ -62,15 +65,19 @@ variable "key_vault_key_name" {
 
 variable "file_share_name" {
   description = "The name of the file share to be created."
+  default  =  "testfileshare"
 }
 
 variable "file_share_quota" {
   description = "The quota limit for the file share (in GB)."
-  default     = 1
+  default     = 50
 }
 
 variable "tags" {
-  description = "A mapping of tags to assign to the resource."
-  type        = map(string)
-  default     = {}
+  description = "Tags for the storage resources."                                       # Describes the purpose of the variable
+  type        = map(string)                                                             # Type of the variable
+  default = {
+    "Created_By" = "Terraform_Automation"                                              # Default tags with their values
+  }
 }
+
