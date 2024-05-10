@@ -2,37 +2,22 @@ output "storage_account_id" {
   value = azurerm_storage_account.example.id
 }
 
-
-
-output "storage_account_primary_blob_endpoint" {
-  value = azurerm_storage_account.example.primary_blob_endpoint
+output "file_share_url" {
+  value = azurerm_storage_share.example.url
 }
 
-output "storage_account_secondary_blob_endpoint" {
-  value = azurerm_storage_account.example.secondary_blob_endpoint
+output "storage_account_https_only_enabled" {
+  value = azurerm_storage_account.example.enable_https_traffic_only
 }
 
-output "storage_account_primary_queue_endpoint" {
-  value = azurerm_storage_account.example.primary_queue_endpoint
+output "storage_account_key_vault_id" {
+  value = azurerm_storage_account.example.key_vault_id
 }
 
-output "storage_account_secondary_queue_endpoint" {
-  value = azurerm_storage_account.example.secondary_queue_endpoint
+output "storage_account_key_vault_key_id" {
+  value = azurerm_storage_account.example.key_vault_key_id
 }
 
-output "storage_account_primary_table_endpoint" {
-  value = azurerm_storage_account.example.primary_table_endpoint
+output "storage_account_key_vault_key_name" {
+  value = azurerm_storage_account.example.key_vault_key_name
 }
-
-output "storage_account_secondary_table_endpoint" {
-  value = azurerm_storage_account.example.secondary_table_endpoint
-}
-
-output "storage_account_primary_file_endpoint" {
-  value = azurerm_storage_account.example.primary_file_endpoint
-}
-
-output "storage_account_secondary_file_endpoint" {
-  value = azurerm_storage_account.example.secondary_file_endpoint
-}
-
