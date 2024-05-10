@@ -51,15 +51,15 @@ variable "enable_https_traffic_only" {
   default     = true
 }
 
-variable "key_vault_id" {
+#variable "key_vault_id" {
   description = "The ID of the Key Vault."
 }
 
-variable "key_vault_key_id" {
+#variable "key_vault_key_id" {
   description = "Key Vault Key Id used for Encryption Scope creation."
 }
 
-variable "key_vault_key_name" {
+#variable "key_vault_key_name" {
   description = "Key Vault Key Name used for CMK Encryption."
 }
 
