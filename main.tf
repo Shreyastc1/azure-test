@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "azurerm" {
-  # Configuration options
+  features {}  # No special features enabled for the Azure provider
 }
 
 resource "azurerm_resource_group" "example" {
