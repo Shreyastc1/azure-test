@@ -28,7 +28,7 @@ variable "access_tier" {
   default     = "Hot"
 }
 
-variable "replication_type" {
+variable "account_replication_type" {
   description = "The replication type for the storage account. Options are LRS, GRS, RAGRS, ZRS."
   default     = "LRS"
 }
